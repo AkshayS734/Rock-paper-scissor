@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+    text-align: center;
+    color:white;
+}
+img{
+    border:solid;
+
+}
+h1{
+    font-size:5rem;
+    font-family: serif;
+}
+p{
+    font-size: 2rem;
+
+
+}
+.container{
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    
+}
+.button{
+    height: 170px;
+    width: 170px;
+    display: flex;
+    margin: 0 25px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.score-label{
+    display: flex;
+    justify-content: center;
+}
+.label{
+    margin-top: 80px;
+    padding:0 40px;
+    font-size:40px;
+}
+.result-container{
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0;
+}
+.score-container{
+    display:flex;
+    justify-content: center;
+}
+.score{
+    font-size: 80px;
+    padding: 0 70px;
+}
+
+
+.button.fade-in{
+    animation-name: fade-in;
+    animation-duration: 00ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+    
