@@ -3,10 +3,6 @@ body{
     text-align: center;
     color:white;
 }
-img{
-    border:solid;
-
-}
 h1{
     font-size:5rem;
     font-family: serif;
@@ -30,9 +26,45 @@ p{
     padding: 30px;
     justify-content: center;
     align-items: center;
-    transition: all 0.4s ease;
     cursor: pointer;
+    border: solid black;
+    margin: 0 50px;
 }
+.rock{
+    background-image: url("images/cave-painting.png");
+    text-indent: -99999px;
+    white-space: nowrap;
+    background-color: black;
+    background-size: contain;
+    box-sizing:content-box;
+    height: 150px;
+    width: 150px;
+    background-size: 100%;
+
+}
+.paper{
+    background-image: url("images/document.png");
+    text-indent: -99999px;
+    white-space: nowrap;
+    background-color: black;
+    background-size: contain;
+    box-sizing:content-box;
+    height: 150px;
+    width: 150px;
+    background-size: 100%;
+}
+.scissor{
+    background-image: url("images/scissors-opened-tool-shape.png");
+    text-indent: -99999px;
+    white-space: nowrap;
+    background-color: black;
+    background-size: contain;
+    box-sizing:content-box;
+    height: 150px;
+    width: 150px;
+    background-size: 100%;
+}
+
 .score-label{
     display: flex;
     justify-content: center;
@@ -55,13 +87,7 @@ p{
     font-size: 80px;
     padding: 0 70px;
 }
-
-
-.button.fade-in{
-    animation-name: fade-in;
-    animation-duration: 00ms;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+.pressed{
+    filter: invert(1);
 }
     
