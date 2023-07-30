@@ -29,18 +29,17 @@ p{
     cursor: pointer;
     border: solid black;
     margin: 0 50px;
+    transition: transform 0.3s;
 }
 .rock{
     background-image: url("images/cave-painting.png");
     text-indent: -99999px;
     white-space: nowrap;
     background-color: black;
-    background-size: contain;
-    box-sizing:content-box;
     height: 150px;
     width: 150px;
-    background-size: 100%;
-
+    background-size:contain;
+    display: flex;
 }
 .paper{
     background-image: url("images/document.png");
@@ -48,10 +47,9 @@ p{
     white-space: nowrap;
     background-color: black;
     background-size: contain;
-    box-sizing:content-box;
     height: 150px;
     width: 150px;
-    background-size: 100%;
+    display: flex;
 }
 .scissor{
     background-image: url("images/scissors-opened-tool-shape.png");
@@ -59,10 +57,9 @@ p{
     white-space: nowrap;
     background-color: black;
     background-size: contain;
-    box-sizing:content-box;
     height: 150px;
     width: 150px;
-    background-size: 100%;
+    display: flex;
 }
 
 .score-label{
@@ -87,7 +84,18 @@ p{
     font-size: 80px;
     padding: 0 70px;
 }
-.pressed{
-    filter: invert(1);
+.button.clicked {
+    transform: scale(2.2);
 }
-    
+.roundresult{
+    padding-top: 40px;
+}
+.center-container {
+    text-align: center;
+}
+.restart-button{
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}

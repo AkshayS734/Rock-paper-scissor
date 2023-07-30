@@ -15,10 +15,13 @@
             <p>Choose your weapon</p>
         </div>
         <div class="btn container">
-            <button class="rock button">rock</button>
+            <button type="button" class="rock button">rock</button>
             <button class="paper button">paper</button>
             <button class="scissor button">scissor</button>
         </div>
+    </div>
+    <div class="roundresult">
+        <p class="result">Round Result: </p>
     </div>
     <div class="Score">
         <div class="score-label">
@@ -29,8 +32,11 @@
             <div class="player score">0</div>
             <div class="computer score">0</div>
         </div>
-        <div class="result-container"></div>
     </div>
+    <div class="center-container">
+        <p class="final-result">Final Winner: </p>
+        <button class="restart-button" onclick="restartGame()">Restart Game</button>
+      </div>
     <script type="text/javascript" src="JS/index.js" charset="UTF-8"></script>
 </body>
 </html>
