@@ -61,7 +61,10 @@ function handleGameResult(result) {
         else {
             finalResult.textContent = "Final Result: It's a Tie!";
         }
+        var restartButton = document.getElementById("resbtn");
+        restartButton.style.display = "block";
     }
+  
 }
 function updateScores() {
     var score1 = document.querySelector(".player");
@@ -78,4 +81,6 @@ function restartGame() {
     document.querySelectorAll(".button").forEach(button => {
     button.disabled = false; // Re-enable the buttons
     });
+    var restartButton = document.getElementById("resbtn");
+    restartButton.style.display = "none";
 }
