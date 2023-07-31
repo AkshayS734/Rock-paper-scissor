@@ -63,6 +63,8 @@ function handleGameResult(result) {
         }
         var restartButton = document.getElementById("resbtn");
         restartButton.style.display = "block";
+        var finalres=document.getElementById("finrslt");
+        finalres.style.display="block";
     }
   
 }
@@ -83,4 +85,6 @@ function restartGame() {
     });
     var restartButton = document.getElementById("resbtn");
     restartButton.style.display = "none";
+    var finalres=document.getElementById("finrslt");
+    finalres.style.display="none";
 }

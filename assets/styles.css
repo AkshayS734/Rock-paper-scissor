@@ -84,20 +84,30 @@ p{
     font-size: 80px;
     padding: 0 70px;
 }
-.button.clicked {
-    transform: scale(2.2);
-}
 .roundresult{
     padding-top: 40px;
 }
-.center-container {
+.final-container {
     text-align: center;
+}
+.final-result{
+    display:none;
 }
 .restart-button{
     justify-content: center;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    display: none;
-    margin: 0 auto;
+    margin: 80px auto;
+    display:none;
+}
+.footer{
+    justify-content: center;
+    color:white;
+    background-color: black;
+    text-align: center;
+}
+.footer-object{
+    font-size:15px;
+    margin-bottom: 0;
 }
