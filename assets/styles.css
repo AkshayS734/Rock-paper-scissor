@@ -9,59 +9,40 @@ h1{
 }
 p{
     font-size: 2rem;
-
-
 }
-.container{
+.btn-container{
     display:flex;
     margin: auto;
     justify-content: center;
-    
-}
+    width: 80%;
+    height:auto;
+    }
 .button{
-    height: 170px;
-    width: 170px;
-    display: flex;
-    margin: 0 25px;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
+    margin: 5% 5%;
+    height: 150px;
+    width: 150px;
     cursor: pointer;
-    border: solid black;
-    margin: 0 50px;
-    transition: transform 0.3s;
+    border: solid black 1px ;
+    font-size: 0;
 }
 .rock{
     background-image: url("images/cave-painting.png");
-    text-indent: -99999px;
-    white-space: nowrap;
+    background-repeat: no-repeat;
     background-color: black;
-    height: 150px;
-    width: 150px;
-    background-size:contain;
-    display: flex;
+    background-size: 100%;
 }
 .paper{
-    background-image: url("images/document.png");
-    text-indent: -99999px;
-    white-space: nowrap;
+    background-image: url(images/document.png);
+    background-repeat: no-repeat;
     background-color: black;
-    background-size: contain;
-    height: 150px;
-    width: 150px;
-    display: flex;
+    background-size: 100%;
 }
 .scissor{
-    background-image: url("images/scissors-opened-tool-shape.png");
-    text-indent: -99999px;
-    white-space: nowrap;
+    background-image: url(images/scissors-opened-tool-shape.png);
+    background-repeat: no-repeat;
     background-color: black;
-    background-size: contain;
-    height: 150px;
-    width: 150px;
-    display: flex;
+    background-size: 100%;
 }
-
 .score-label{
     display: flex;
     justify-content: center;
@@ -84,9 +65,6 @@ p{
     font-size: 80px;
     padding: 0 70px;
 }
-.roundresult{
-    padding-top: 40px;
-}
 .final-container {
     text-align: center;
 }
@@ -95,17 +73,20 @@ p{
 }
 .restart-button{
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     cursor: pointer;
     margin: 80px auto;
     display:none;
 }
+.restart-button:hover{
+    background-color: rgb(224, 225, 227);
+}
+
 .footer{
     justify-content: center;
-    color:white;
-    background-color: black;
     text-align: center;
+    margin-top: 5%;
 }
 .footer-object{
     font-size:15px;
